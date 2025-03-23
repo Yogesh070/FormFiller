@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Filler</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Form Filler</h1>
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="enableToggle">
+          <span class="slider round"></span>
+        </label>
+        <span id="statusText">Enabled</span>
+      </div>
+    </header>
+    
+    <div class="actions">
+      <button id="fillFormsBtn" class="primary-btn">Fill Forms</button>
+      <button id="optionsBtn" class="secondary-btn">Options</button>
+    </div>
+    
+    <div class="settings">
+      <div class="setting-item">
+        <label for="autoFillToggle">Auto-fill on page load</label>
+        <label class="switch small">
+          <input type="checkbox" id="autoFillToggle">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+    
+    <div class="info">
+      <p>Press <kbd>Alt</kbd> + <kbd>F</kbd> to fill forms on the current page.</p>
+      <p>Right-click on a form and select "Fill form" from the context menu.</p>
+    </div>
+    
+    <footer>
+      <p class="version">v1.0.0</p>
+    </footer>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
